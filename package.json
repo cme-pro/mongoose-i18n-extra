@@ -1,0 +1,23 @@
+{
+  "name": "mongoose-i18n-extra",
+  "version": "0.0.1",
+  "description": "mongoose plugin to manage i18n fields",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --forceExit"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^23.3.3",
+    "@types/mongoose": "^5.2.18",
+    "jest": "^23.6.0",
+    "mongoose": "^5.3.1",
+    "ts-jest": "^23.10.3",
+    "typescript": "^3.1.1",
+    "typescript-eslint-parser": "^19.0.2"
+  },
+  "peerDependencies": {
+    "mongoose": ">= 4"
+  }
+}

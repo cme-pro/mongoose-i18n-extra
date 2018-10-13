@@ -1,6 +1,6 @@
 {
   "name": "mongoose-i18n-extra",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "mongoose plugin to manage i18n fields",
   "homepage": "https://github.com/cme-pro/mongoose-i18n-extra#readme",
   "main": "dist/index.js",
@@ -28,7 +28,6 @@
   "bugs": {
     "url": "https://github.com/cme-pro/mongoose-i18n-extra/issues"
   },
-  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^23.3.3",
     "@types/mongoose": "^5.2.18",

@@ -1,6 +1,10 @@
 
 # mongoose-i18n-extra
 
+[![Build Status](https://travis-ci.org/cme-pro/mongoose-i18n-extra.svg?branch=master)](https://travis-ci.org/cme-pro/mongoose-i18n-extra)
+[![Code Climate](https://codeclimate.com/github/cme-pro/mongoose-i18n-extra/badges/gpa.svg)](https://codeclimate.com/github/cme-pro/mongoose-i18n-extra)
+
+
 Mongoose schema plugin for multilingual fields, largely inspired by [mongoose-intl](https://github.com/alexsk/mongoose-intl) plugin.
 
 

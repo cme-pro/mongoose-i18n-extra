@@ -2,12 +2,32 @@
   "name": "mongoose-i18n-extra",
   "version": "0.1.1",
   "description": "mongoose plugin to manage i18n fields",
+  "homepage": "https://github.com/cme-pro/mongoose-i18n-extra#readme",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest --forceExit"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cme-pro/mongoose-i18n-extra.git"
+  },
+  "keywords": [
+    "mongoose",
+    "intl",
+    "i18n",
+    "l10n",
+    "internationalization",
+    "localization"
+  ],
+  "author": {
+    "name": "Sven Gaubert",
+    "url": "https://github.com/svengau"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cme-pro/mongoose-i18n-extra/issues"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^23.3.3",

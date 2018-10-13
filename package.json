@@ -1,6 +1,6 @@
 {
   "name": "mongoose-i18n-extra",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "mongoose plugin to manage i18n fields",
   "main": "index.js",
   "scripts": {

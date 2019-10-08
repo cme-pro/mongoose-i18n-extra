@@ -1,6 +1,6 @@
 {
   "name": "mongoose-i18n-extra",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "mongoose plugin to manage i18n fields",
   "homepage": "https://github.com/cme-pro/mongoose-i18n-extra#readme",
   "main": "dist/index.js",

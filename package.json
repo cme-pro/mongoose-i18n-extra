@@ -6,7 +6,9 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "jest --detectOpenHandles --forceExit"
+    "build": "tsc",
+    "test": "jest --detectOpenHandles --forceExit",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",

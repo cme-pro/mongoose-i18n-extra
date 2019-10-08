@@ -87,6 +87,31 @@ describe("Plugin mongooseI18nExtra", () => {
     });
   });
 
+  test("should be able to update a document with i18n fields using findOneAndUpdate", async () => {
+    await Sample.findOneAndUpdate(
+      { _id: sampleId },
+      {
+        $set: {
+          name: "name with findOneAndUpdate",
+          description: "desc en with findOneAndUpdate"
+        }
+      },
+      { strict: true }
+    );
+
+    let sample = await Sample.findById(sampleId);
+    sample.setLanguage("en");
+    expect(sample.name).toBe("name with findOneAndUpdate");
+    expect(sample.description).toBe("desc en with findOneAndUpdate");
+
+    expect(sample.get("description_fr")).toBe("desc2 fr");
+    expect(sample._i18n).toEqual({
+      de: { description: null },
+      en: { description: "desc en with findOneAndUpdate" },
+      fr: { description: "desc2 fr" }
+    });
+  });
+
   test("should set default value if not default value is empty", async () => {
     let sample = new Sample();
     sample.setLanguage("fr");

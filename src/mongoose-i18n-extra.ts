@@ -57,17 +57,17 @@ export default function mongooseI18nExtra(
         });
     });
     schemaType.options.get = function(value: any) {
-      if (this.getLanguage() === options.defaultLanguage) {
+      if (!this.getLanguage || this.getLanguage() === options.defaultLanguage) {
         return value;
       } else {
         return this.get(`_i18n.${this.getLanguage()}.${path}`);
       }
     };
     schemaType.options.set = function(value: String) {
-      const currentLang = this.getLanguage();
-      if (currentLang === options.defaultLanguage) {
+      if (!this.getLanguage || this.getLanguage() === options.defaultLanguage) {
         return value;
       } else {
+        const currentLang = this.getLanguage();
         const _i18n = getPathValue(this, "_i18n") || {};
         _i18n[currentLang] = _i18n[currentLang] || {};
         _i18n[currentLang][path] = value;

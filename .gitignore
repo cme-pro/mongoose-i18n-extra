@@ -9,5 +9,6 @@
 *.log
 *.heapsnapshot
 .cache
+.history
 test/.globalConfig.json
 /dist

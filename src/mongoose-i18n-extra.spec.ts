@@ -5,15 +5,21 @@ import mongooseLeanVirtuals from "mongoose-lean-virtuals";
 
 const { Schema } = mongoose;
 
+declare global {
+  namespace NodeJS {
+    interface Global {
+      __MONGO_URI__: string;
+      __MONGO_OPTS__: any;
+    }
+  }
+}
+
 let sampleId = mongoose.Types.ObjectId().toString();
 let Sample: any;
 
 describe("Plugin mongooseI18nExtra", () => {
   beforeAll(async () => {
-    await mongoose.connect("mongodb://localhost:27017/mongoose-i18n", {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
-    });
+    mongoose.connect(global.__MONGO_URI__, global.__MONGO_OPTS__);
 
     const schema = new Schema(
       {
@@ -32,6 +38,8 @@ describe("Plugin mongooseI18nExtra", () => {
     schema.plugin(mongooseLeanVirtuals);
     Sample = mongoose.model("Sample", schema);
   });
+
+  afterAll(() => mongoose.disconnect());
 
   describe("Create / update", () => {
     test("should be able to create a document with i18n fields", async () => {

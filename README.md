@@ -1,3 +1,7 @@
+[![npm][npm]][npm-url]
+[![node][node]][node-url]
+[![tests][tests]][tests-url]
+[![downloads][downloads]][downloads-url]
 
 # mongoose-i18n-extra
 
@@ -180,3 +184,13 @@ But please be careful with some of them like `enum` which may not be relevant fo
 ## Alternative plugins
 
 * [mongoose-intl](https://github.com/alexsk/mongoose-intl)
+
+
+[npm]: https://img.shields.io/npm/v/mongoose-i18n-extra.svg
+[npm-url]: https://npmjs.com/package/mongoose-i18n-extra
+[node]: https://img.shields.io/node/v/mongoose-i18n-extra.svg
+[node-url]: https://nodejs.org
+[tests]: http://img.shields.io/travis/cme-pro/mongoose-i18n-extra.svg
+[tests-url]: https://travis-ci.org/cme-pro/mongoose-i18n-extra
+[downloads]: https://img.shields.io/npm/dt/mongoose-i18n-extra.svg
+[downloads-url]: https://npmjs.com/package/mongoose-i18n-extra

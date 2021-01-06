@@ -633,6 +633,14 @@ array-unique@^0.3.2:
   resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
   integrity sha1-qJS3XUvE9s1nnvMkSp/Y9Gri1Cg=
 
+array.prototype.flat@1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/array.prototype.flat/-/array.prototype.flat-1.2.3.tgz#0de82b426b0318dbfdb940089e38b043d37f6c7b"
+  integrity sha512-gBlRZV0VSmfPIeWfuuy56XZMvbVfbEUnOXUvt3F/eUUUSyzlgLxhEX4YAEpxNAogRGehPSnfXyPtYyKAhkzQhQ==
+  dependencies:
+    define-properties "^1.1.3"
+    es-abstract "^1.17.0-next.1"
+
 asn1@~0.2.3:
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/asn1/-/asn1-0.2.4.tgz#8d2475dfab553bb33e77b54e59e880bb8ce23136"
@@ -2744,11 +2752,12 @@ mongodb@3.5.3, mongodb@^3.2.7:
   optionalDependencies:
     saslprep "^1.0.0"
 
-mongoose-lean-virtuals@0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/mongoose-lean-virtuals/-/mongoose-lean-virtuals-0.5.0.tgz#58d4ffefb3515d52889df7d104fadba82248c93f"
-  integrity sha512-IO0KsUXpzo8uhHnUgOlj0ShfYVjVZg1txaKRq/EtQcSQxvxjfuzkQ6XIQ2TvnyftJCewFV+2kcK3lU1NJraUnQ==
+mongoose-lean-virtuals@0.7.6:
+  version "0.7.6"
+  resolved "https://registry.yarnpkg.com/mongoose-lean-virtuals/-/mongoose-lean-virtuals-0.7.6.tgz#2aa191e851b04a702d25997f19c16b6b9ebc7627"
+  integrity sha512-Yb3u9+1vTbCgG87BFTbKl2O3kzcKRnZF9A4bRbbE2NMvWJqGzj0iVdDxPXaZQ8lBhlgFMPwh6oEYIAAPIvld+g==
   dependencies:
+    array.prototype.flat "1.2.3"
     mpath "0.5.x"
 
 mongoose-legacy-pluralize@1.0.2:

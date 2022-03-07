@@ -36,7 +36,7 @@
     "fs-extra": "^8.1.0",
     "jest": "25.1.0",
     "jest-environment-node": "^25.1.0",
-    "mongodb-memory-server": "^6.2.4",
+    "mongodb-memory-server": "8.4.0",
     "mongoose": "^5.7.3",
     "mongoose-lean-virtuals": "0.5.0",
     "ts-jest": "25.2.1",
